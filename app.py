@@ -10,7 +10,6 @@ def game():
     result = ""
     computer_choice = ""
     user_choice = ""
-    
     if request.method == "POST":
         options = ["rock", "paper", "scissors"]
         user_choice = request.form.get("choice")
@@ -27,7 +26,9 @@ def game():
         else:
             result = "You lose. 🤖"
 
-    return render_template("index.html", result=result, user=user_choice, computer=computer_choice)
+    return render_template(
+        "index.html", result=result, 
+        user=user_choice, computer=computer_choice)
 
 
 if __name__ == "__main__":
