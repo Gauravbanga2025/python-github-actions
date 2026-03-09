@@ -24,7 +24,7 @@ def game():
             result = "You win! 🎉"
 
         else:
-            result = "You lose. 🤖"
+            result = "You lose 🤖"
 
     return render_template(
         "index.html", result=result, 
