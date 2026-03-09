@@ -27,7 +27,7 @@ def game():
             result = "You lose 🤖"
 
     return render_template(
-        "index.html", result=result, 
+        "index.html", result=result,
         user=user_choice, computer=computer_choice)
 
 
